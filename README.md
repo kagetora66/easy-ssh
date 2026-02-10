@@ -13,7 +13,7 @@ Is it annoying to write "/ssh" in tramp or #port each time you want to connect t
 **How to install?**
 First copy the file to your emacs.d
 
-    `https://github.com/kagetora66/easy-ssh ~/.emacs.d/
+    git clone https://github.com/kagetora66/easy-ssh ~/.emacs.d/
     
 Then add this line to your emacs initialization file
 
