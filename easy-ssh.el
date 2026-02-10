@@ -1,9 +1,9 @@
 ;;; easy-ssh.el -*- lexical-binding: t; -*-
-;;Various functions will be here to aid with using ssh with HPDS test storage
+;;variables to store IP and port history.
 (defvar ssh-ip-history nil
   "History list of HPDS IPs.")
 
-(defvar ssh-port-history nil ; Default port as initial
+(defvar ssh-port-history nil
   "History list of ports.")
 
   "Load SSH history from file."
@@ -18,7 +18,7 @@
           (forward-line)))))
 
 (defun easy-ssh (ip port)
-  "SSH into HPDS test storage.
+  "SSH into Hosts and save them.
 Prompt for IP and port separately."
   (interactive
    (list
