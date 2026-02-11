@@ -1,12 +1,12 @@
 ;;; easy-ssh.el -*- lexical-binding: t; -*-
 ;;variables to store IP and port history.
 (defvar ssh-ip-history nil
-  "History list of HPDS IPs.")
+  "History list of ssh IPs.")
 
 (defvar ssh-port-history nil
   "History list of ports.")
 
-  "Load SSH history from file."
+  "Load SSH history from file on startup."
 (when (file-exists-p "~/.sshhistory")
   (with-temp-buffer
       (insert-file-contents "~/.sshhistory")
