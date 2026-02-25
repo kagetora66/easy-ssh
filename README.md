@@ -13,7 +13,9 @@ Is it annoying to write "/ssh" in tramp or #port each time you want to connect t
 **How to install?**
 First copy the file to your emacs.d
 
-    git clone https://github.com/kagetora66/easy-ssh ~/.emacs.d/
+    git clone --depth 1 https://github.com/kagetora66/easy-ssh /tmp/easy-ssh && \
+    cp /tmp/easy-ssh/*.el ~/.emacs.d/ && \
+    rm -rf /tmp/easy-ssh
     
 Then add this line to your emacs initialization file
 
