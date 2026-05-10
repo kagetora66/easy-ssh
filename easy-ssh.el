@@ -27,5 +27,5 @@ Prompt for IP and port separately."
   (with-temp-buffer
     (print (list ip port) (current-buffer))
     (write-region (point-min) (point-max) "~/.sshhistory" t))
-  (let ((remote-path (format "/ssh:root@%s#%s:" ip port)))
-    (dired remote-path)))
+  (let ((default-directory (format "/ssh:root@%s#%s:" ip port)))
+    (eshell)))
